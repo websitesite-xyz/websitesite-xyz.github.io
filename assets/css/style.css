@@ -1,0 +1,170 @@
+
+
+@font-face
+{font-family: neord;
+src: url('http://ja-ja.co/font/NEORD.ttf')
+
+}
+
+@font-face {
+    font-family: maison2;
+    src: url('http://ja-ja.co/font/MaisonNeue-Demi.otf');
+}
+
+@font-face {
+    font-family: maison;
+    src: url('http://ja-ja.co/font/MaisonNeue-Medium-TRIAL.otf');
+}
+
+@font-face {
+    font-family: archia;
+    src: url('http://ja-ja.co/font/archia-regular-webfont.ttf');
+}
+
+@font-face {
+    font-family: basier;
+    src: url('http://ja-ja.co/font/basiercircle-regular-webfont.ttf');
+}
+
+body {
+    color: #000;
+    font-family: basier, maison, arial, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+    letter-spacing:1px;
+    background: #fff;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/*a:link { color:#0074ff; }*/
+a:visited { color:blue;}
+a:hover { text-decoration:underline; outline:none;}
+a:active { color:#0074ff; text-decoration:none; outline:none; }
+
+tr:hover {background-color:none;}
+
+
+thead {font-size:9pt;}
+
+.column {
+width: 50%;
+float: left;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.table th,
+.table td {
+  padding: 0.30rem;
+  vertical-align: center;
+  border-top: 1px solid #04E890;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #04E890;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #04E890;
+}
+
+.table-sm th,
+.table-sm td {
+  padding: 0rem;
+}
+
+.table-bordered {
+  border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #000;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 0px;
+}
+
+.table-grid {
+    width:80%;
+    margin:0 auto;
+}
+
+.dataTables_filter {
+     display: none;
+}
+
+.dataTables_info {
+     display: none;
+}
+
+.zoom {
+  padding: 0px;
+  transition: transform 0s;
+  height: 30px;
+  margin: 0 auto;
+  transform-origin: left top;
+}
+
+/*.zoom:hover {
+  -ms-transform: scale(3);
+  -webkit-transform: scale(3);
+  transform: scale(5); 
+}*/
+
+.gridimg {
+    width:75%;
+    padding: 10px;
+}
+
+.hiddenRow {
+    padding: 0 !important;
+}
+.hidden{display:none;visibility:hidden}
+
+.thumbnail {
+    visibility: hidden;
+}
+
+footer {
+    margin-top: 15pt;
+    margin-bottom: 15pt;
+    font-size: 7pt;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.mode {
+    font-size: 9pt;
+}
+
+.mode:hover {
+    color: white;
+    background: blue;
+}
+
+
+
+@media screen and (max-width: 704px) {
+  
+.v2 {
+    display: none;
+}
+
+.v3 {
+    display: none;
+}
+
+body {
+    margin-bottom: 50px;
+}
+

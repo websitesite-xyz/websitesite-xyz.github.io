@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="websitesite" />
+<title>Websitesite</title>
+
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen" />
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap.min.js"></script>
+<script>
+function myFunction() {
+  var x = document.getElementById("listView");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+    var x = document.getElementById("gridView");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+  document.getElementById("gridView").setAttribute("class","table-grid");
+}
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable(
+    {"paging": false}
+        );
+    });
+</script>
+<script>
+$(document).ready(function() {
+    var dataTable = $('#example').dataTable();
+    $("#searchbox").keyup(function() {
+        dataTable.fnFilter(this.value);
+    });    
+    });
+</script>
+</head>
+
+<body>
+    <br><br>
+    Websitesite
+    <br><br>
+    <br><br>
+
+<div id="listView" style="display:block;">
+<table id="example" class="table table-bordered" style="width:85%; margin:0 auto;">
+        <thead>
+            <tr>
+                <th class="v1">v.1</th>
+                <th class="v2">v.2</th>
+                <th class="v3">v.3</th>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Function</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/v1"><img class="zoom" src="assets/img/websitesite1.jpg"></a></td>
+                <td class="v2"><a href="https://websitesite.xyz/v2"><img class="zoom" src="assets/img/websitesite2.jpg"></a></td>
+                <td class="v3"><a href="https://websitesite.xyz"><img class="zoom" src="assets/img/websitesite3.jpg"></a></td>
+                <td><a href="https://websitesite.xyz">Websitesite</a></td>
+                <td>2020-</td>
+                <td>Archive</td>
+                <td>A site to archive websites I made</td>
+            </tr>
+
+             <tr>
+                <td class="v1"><a href="https://websitesite.xyz/nameinthemiddle"><img class="zoom" src="assets/img/nameinthemiddle.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/nameinthemiddle">Name in the Middle</a></td>
+                <td>2020</td>
+                <td>Template</td>
+                <td>A code sample to make any text centered</td>
+            </tr>
+
+                <td class="v1"><a href="https://websitesite.xyz/blinkingfive"><img class="zoom" src="assets/img/blinkingfive.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/blinkingfive">Blinking Five</a></td>
+                <td>2020</td>
+                <td>Joke</td>
+                <td>A 5-second countdown animation made with CSS that failed</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/callmegoodnight"><img class="zoom" src="assets/img/callmegoodnight.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/callmegoodnight">Call Me Good Night</a></td>
+                <td>2020</td>
+                <td>Phone</td>
+                <td>A way to call Jisu good night</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/screenshotyourfortune"><img class="zoom" src="assets/img/screenshotyourfortune.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/screenshotyourfortune">Screenshot Your Fortune</a></td>
+                <td>2020</td>
+                <td>Fortune teller</td>
+                <td>A fortune telling mechanism with fortunes written in her writing workshop</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/palebluedot"><img class="zoom" src="assets/img/palebluedot.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/palebluedot">Pale Blue Dot</a></td>
+                <td>2020</td>
+                <td>Color comparison</td>
+                <td>A list of HTML color names that end with 'blue' layered on a photograph of the Earth called 'Pale Blue Dot' taken by Voyager 1</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/cookingverbs"><img class="zoom" src="assets/img/cookingverbs.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/cookingverbs">Cooking Verbs</a></td>
+                <td>2020</td>
+                <td>Generator</td>
+                <td>A randomly generated assortments of adverbs and verbs from cook books</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/doablelist"><img class="zoom" src="assets/img/doablelist.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/doablelist">Doable List</a></td>
+                <td>2020-</td>
+                <td>Campaign</td>
+                <td>A platform to motivate people to think and write about their bucket lists</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/openinglines"><img class="zoom" src="assets/img/openinglines.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/openinglines">Opening Lines</a></td>
+                <td>2020-</td>
+                <td>Archive</td>
+                <td>A index of opening lines of books I own</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/dontforgettotakeaselfiewithyourherbs/v1"><img class="zoom" src="assets/img/dontforgettotakeaselfiewithyourherbs1.jpg"></td>
+                <td class="v2"><a href="https://websitesite.xyz/dontforgettotakeaselfiewithyourherbs"><img class="zoom" src="assets/img/dontforgettotakeaselfiewithyourherbs2.jpg"></a></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/dontforgettotakeaselfiewithyourherbs">Don't Forget to Take a Selfie with Your Herbs</a></td>
+                <td>2020-</td>
+                <td>Campaign</td>
+                <td>An experiment to archive a specific content, in this case selfies with with herbs without using SNS</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/dualview/index.html"><img class="zoom" src="assets/img/dualview.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/dualview/index.html">Dual View</a></td>
+                <td>2020</td>
+                <td>Interface</td>
+                <td>A website made to be browsed on ipad by two people facing each other</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/webquilts/index.html"><img class="zoom" src="assets/img/webquilts.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/webquilts/index.html">Web Quilts</a></td>
+                <td>2020</td>
+                <td>Sketchbook</td>
+                <td>A quilt to practice using div</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/archiveofcitruspainting"><img class="zoom" src="assets/img/archiveofcitruspainting.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/archiveofcitruspainting/index.html">Archive of Citrus Painting</a></td>
+                <td>2020-</td>
+                <td>Cloud</td>
+                <td>A storage to save images outside of a local folder</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/misspell"><img class="zoom" src="assets/img/misspell.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/misspell">Misspell</a></td>
+                <td>2020-</td>
+                <td>Search engine</td>
+                <td>A search engine to lookup the words I misspell almost everytime</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/poyc"><img class="zoom" src="assets/img/poyc.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/poyc">POYC</a></td>
+                <td>2021</td>
+                <td>Joke</td>
+                <td>A random generator of words that starts with POYC which was a former name of <a href="https://www.instagram.com/poyccir/">CIR</a></td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/whycode"><img class="zoom" src="assets/img/whycode.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/whycode">Why Code</a></td>
+                <td>2021-</td>
+                <td>Answering machine</td>
+                <td>An answering machine to a repetitive question, 'Why did you learn to code?'</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/welcomebacksohyeon"><img class="zoom" src="assets/img/welcomebacksohyeon.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/welcomebacksohyeon">Welcome Back Sohyeon</a></td>
+                <td>2021</td>
+                <td>Banner</td>
+                <td>A banner to welcome Sohyeon whenever she visits Seoul</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/forthenewdrivers/index.html"><img class="zoom" src="assets/img/forthenewdrivers.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/forthenewdrivers/index.html">For the New Drivers</a></td>
+                <td>2022</td>
+                <td>Signage</td>
+                <td>A print station for myself and other new drivers</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/specialcharacters/index.html"><img class="zoom" src="assets/img/specialcharacters.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/specialcharacters/index.html">Special Characters</a></td>
+                <td>2022</td>
+                <td>Bulletin board</td>
+                <td>An online clipboard to minimize the inconvinience of looking up and copying special characters</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/mostrecentjisu"><img class="zoom" src="assets/img/mostrecentjisu.jpg"></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/mostrecentjisu/index.html">Most Recent Jisu</a></td>
+                <td>2022-</td>
+                <td>SNS</td>
+                <td>A personal platform to break and recategorize the linear and chronological timeline <small>(Commissioned by <a href="https://www.hangeul.go.kr/specialExh/specialExhView.do?curr_menu_cd=0103020300&pageIndex=1&target=3&no=131">National Hangul Museum</a>)</small></td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/readinglog/insearchoflosttime/v1"><img class="zoom" src="assets/img/insearchoflosttime1.jpg"></a></td>
+                <td class="v2"><a href="https://websitesite.xyz/readinglog/insearchoflosttime"><img class="zoom" src="assets/img/insearchoflosttime2.jpg"></a></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/readinglog/insearchoflosttime">Reading Log ― In Search of Lost Time</a></td>
+                <td>2022-</td>
+                <td>Tracker</td>
+                <td>A tracker to fisnish reading 6 volumes long book, <i>In Search of Lost Time</i> by Marcel Proust as part of achieving <a href="https://websitesite.xyz/doablelist/">Doable List</a></td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/jisus-expanding-bookcase"><img class="zoom" src="assets/img/jisusexpandingbookcase.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/jisus-expanding-bookcase">Jisu's Expanding Bookcase</a></td>
+                <td>2023-</td>
+                <td>Index</td>
+                <td>An index of the books I own</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/birdslanguage"><img class="zoom" src="assets/img/birdslanguage.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/birdslanguage">Birds' Language</a></td>
+                <td>2023</td>
+                <td>Random generator</td>
+                <td>A text generator of bird sounds in different languages</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/applelog"><img class="zoom" src="assets/img/applelog.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/applelog">Apple Log</a></td>
+                <td>2023-</td>
+                <td>Tracker</td>
+                <td>An application to keep track of daily apple consumption</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/features"><img class="zoom" src="assets/img/features.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/features">Websitesite Features</a></td>
+                <td>2023-</td>
+                <td>Webzine</td>
+                <td>A spread of webpage that features good websites compiled by Jisu</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/birdcall"><img class="zoom" src="assets/img/birdcall.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/birdcall">Birdcall</a></td>
+                <td>2023</td>
+                <td>Introduction</td>
+                <td>An official website of Jisu's studio named 'Birdcall' <small>(Commissioned by <a href="https://www.acc.go.kr/main/exhibition.do?PID=0202&action=Read&bnkey=EM_0000006228">Asia Culture Center</a>)</small></td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/jisu.info"><img class="zoom" src="assets/img/jisuinfo.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/jisu.info">jisu.info</a></td>
+                <td>2023</td>
+                <td>Resume</td>
+                <td>A document that summerizes Jisu's past, current, future activities</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/jisu.photo"><img class="zoom" src="assets/img/jisuphoto.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/jisu.photo">jisu.photo</a></td>
+                <td>2023-</td>
+                <td>Cloud</td>
+                <td>A storage to save images outside of a local folder</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/saiw"><img class="zoom" src="assets/img/saiw.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/saiw">The School of the Art Institute of Websitesite</a></td>
+                <td>2023-</td>
+                <td>Institution</td>
+                <td>A computer language school for beginners</td>
+            </tr>
+
+            <tr>
+                <td class="v1"><a href="https://websitesite.xyz/jisu.bag"><img class="zoom" src="assets/img/jisubag.jpg"></a></td>
+                <td class="v2"></td>
+                <td class="v3"></td>
+                <td><a href="https://websitesite.xyz/jisu.bag">Jisu.bag</a></td>
+                <td>2023-</td>
+                <td>Log</td>
+                <td>An occasional log of what Jisu is carrying in her bag </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <p>Last updated June 20, 2023</p>
+</div>
+
+</body>
+
+
+</html>
